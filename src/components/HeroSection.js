@@ -21,18 +21,20 @@ export default function HeroSection() {
           className="absolute inset-0"
           style={{
             left: "0%",
-            right: "-20%",
+            right: "-30%",
           }}
         >
           <Image
             src="/hero.jpg"
             alt="Abhishek VS"
             fill
-            priority
-            className="object-cover"
-            style={{
-              objectPosition: "60% 41%",   // mobile: person shifted right, face visible
-            }}
+            
+             className="
+             
+    object-cover
+    object-[10%_-0%]
+    md:object-[60%_41%]
+  "
           />
         </div>
 
@@ -63,35 +65,30 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
-        <div className="px-5 md:px-10 w-full md:max-w-[620px] mt-20 md:mt-0">
+        <div className="px-5 md:px-10 w-full md:max-w-[620px] -mt-30 md:mt-0">
 
-          <p className="uppercase tracking-[0.18em] text-[18px] md:text-[32px] font-semibold mb-2 md:mb-4">
+          <p className="uppercase tracking-[0.18em] text-[18px] md:text-[32px] font-semibold mb-2 md:mb-2">
             <span className="text-black">HI</span>{" "}
             <span className="text-black/35">I'M</span>
           </p>
 
-          <h1 className="font-serif font-bold leading-none mb-5 md:mb-10">
-            <span className="text-[38px] md:text-[72px] text-black">ABHISHEK</span>
-            <span className="ml-1 text-[38px] md:text-[72px] text-black/30">VS</span>
+          <h1 className="font-serif font-bold leading-none mb-5 md:mb-5">
+            <span className="text-[38px] md:text-[76px] text-black">ABHISHEK</span>
+            <span className="ml-5 text-[38px] md:text-[76px] text-black/30">VS</span>
           </h1>
 
-          <div className="text-[13px] md:text-[15px] leading-[1.9] max-w-[260px] md:max-w-[620px]">
-            <p>
-              <span className="text-black">Driven by ambition and guided by creativity, I'm a</span>{" "}
-              <span className="text-black/35">startup founder</span>
-            </p>
-            <p>
-              <span className="text-black">building modern digital brands</span>{" "}
-              <span className="text-black/35">with confidence and purpose.</span>
-            </p>
-            <p>
-              <span className="text-black">I believe every small beginning has the power to create</span>{" "}
-              <span className="text-black/35">something</span>
-            </p>
-            <p>
-              <span className="text-black">extraordinary.</span>
-            </p>
-          </div>
+       <div
+  className="text-[13px] md:text-[18px] leading-[1.9] max-w-[260px] md:max-w-[620px] text-transparent bg-clip-text"
+  style={{
+    backgroundImage:
+      "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.75) 50%, rgba(0,0,0,0.35) 100%)",
+  }}
+>
+  <p>Driven by ambition and guided by creativity, I'm a startup founder</p>
+  <p>building modern digital brands with confidence and purpose.</p>
+  <p>I believe every small beginning has the power to create</p>
+  <p>something extraordinary.</p>
+</div>
 
         </div>
       </div>
