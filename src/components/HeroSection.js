@@ -16,7 +16,7 @@ export default function HeroSection() {
     <section className="relative h-screen overflow-hidden bg-[#d9d9d7]">
 
   {/* Hero Image */}
-<div className="absolute -top-155 -right-25 bottom-0 w-full md:w-[100%]">
+<div className="absolute -top-165 -right-25 bottom-0 w-full md:w-[100%]">
   <Image
   src="/hero.jpg"
   alt="Abhishek VS"
