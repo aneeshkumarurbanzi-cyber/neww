@@ -15,37 +15,36 @@ export default function HeroSection() {
   return (
     <section className="relative h-screen overflow-hidden bg-[#d9d9d7]">
 
-      {/* Background Image */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div
-          className="absolute inset-0"
-          style={{
-            left: "0%",
-            right: "-30%",
-          }}
-        >
-          <Image
-            src="/hero.jpg"
-            alt="Abhishek VS"
-            fill
-            
-             className="
-             
+  {/* Hero Image */}
+<div className="absolute -top-155 -right-25 bottom-0 w-full md:w-[100%]">
+  <Image
+  src="/hero.jpg"
+  alt="Abhishek VS"
+  fill
+  priority
+  quality={100}
+  className="
     object-cover
-    object-[10%_-0%]
-    md:object-[60%_41%]
+    grayscale
+    object-[65%_210px]
+    md:object-[65%_top]
   "
-          />
-        </div>
-
-        
+/>
+  {/* Left Fade */}
+<div
+    className="absolute inset-y-0 left-0 w-24 md:w-40 pointer-events-none"
+    style={{
+      background:
+        "linear-gradient(to right, #d9d9d7 0%, rgba(217,217,215,0) 100%)",
+    }}
+  />
 
         {/* Right Fade */}
         <div
-          className="absolute inset-y-0 right-0 w-20 md:w-32"
+          className="absolute inset-y-0 right-0 w-40 md:w-32"
           style={{
             background:
-              "linear-gradient(to left, #d9d9d7 0%, rgba(217,217,215,0) 90%)",
+              "linear-gradient(to left, #d9d9d7 0%, rgba(217,217,215,0) 5 0%)",
           }}
         />
       </div>
@@ -56,7 +55,7 @@ export default function HeroSection() {
           <a
             key={i}
             href={item.href}
-            className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-black flex items-center justify-center text-black hover:bg-black hover:text-white transition-all duration-300"
+            className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-300 hover:bg-black hover:text-white transition-all duration-300"
           >
             {item.icon}
           </a>
@@ -65,7 +64,7 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
-        <div className="px-5 md:px-10 w-full md:max-w-[620px] -mt-30 md:mt-0">
+        <div className="px-5 md:px-10 w-full md:max-w-[620px] mt-5 md:mt-0">
 
           <p className="uppercase tracking-[0.18em] text-[18px] md:text-[32px] font-semibold mb-2 md:mb-2">
             <span className="text-black">HI</span>{" "}
@@ -95,7 +94,7 @@ export default function HeroSection() {
 
       {/* Marquee */}
       <div className="absolute bottom-0 left-0 w-full z-20 overflow-hidden">
-        <div className="py-3 md:py-4 whitespace-nowrap animate-marquee text-gray-400 text-[11px] md:text-[13px] tracking-wide">
+        <div className="py-3 md:py-4 whitespace-nowrap animate-marquee text-white text-[11px] md:text-[13px] tracking-wide">
           EVERY GREAT ACHIEVEMENT STARTS WITH A DREAM AND THE DETERMINATION TO CHASE IT RELENTLESSLY. • I CREATE, INSPIRE, AND EVOLVE THROUGH EVERY CHALLENGE AND EVERY OPPORTUNITY. • EVERY GREAT ACHIEVEMENT STARTS WITH A DREAM AND THE DETERMINATION TO CHASE IT RELENTLESSLY. • I CREATE, INSPIRE, AND EVOLVE THROUGH EVERY CHALLENGE AND EVERY OPPORTUNITY. •
         </div>
       </div>
