@@ -16,7 +16,7 @@ export default function HeroSection() {
     <section className="relative h-screen overflow-hidden bg-[#d9d9d7]">
 
   {/* Hero Image */}
-<div className="absolute -top-165 -right-25 bottom-0 w-full md:w-[100%]">
+<div className="absolute -top-165 -right-25 bottom-0 w-full md:w-[100%] overflow-hidden">
   <Image
   src="/hero.jpg"
   alt="Abhishek VS"
@@ -50,7 +50,7 @@ export default function HeroSection() {
       </div>
 
       {/* Social Icons */}
-      <div className="absolute top-5 right-4 md:top-8 md:right-10 z-20 flex items-center gap-2 md:gap-3">
+      <div className="absolute top-5 right-4 md:top-8 md:right-10 z-20 flex items-center gap-2 md:gap-3 overflow-hidden">
         {socials.map((item, i) => (
           <a
             key={i}
@@ -63,7 +63,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center">
+      <div className="relative z-10 h-full flex items-center overflow-hidden">
         <div className="px-5 md:px-10 w-full md:max-w-[620px] mt-5 md:mt-0">
 
           <p className="uppercase tracking-[0.18em] text-[18px] md:text-[32px] font-semibold mb-2 md:mb-2">
