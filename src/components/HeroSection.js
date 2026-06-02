@@ -73,11 +73,11 @@ export default function HeroSection() {
 
           <h1 className="font-serif font-bold leading-none mb-5 md:mb-5">
             <span className="text-[38px] md:text-[76px] text-black">ABHISHEK</span>
-            <span className="ml-5 text-[38px] md:text-[76px] text-black/30">VS</span>
+            <span className="ml-5 text-[38px] md:text-[76px] text-black/50">VS</span>
           </h1>
 
        <div
-  className="text-[13px] md:text-[18px] leading-[1.9] max-w-[260px] md:max-w-[620px] text-transparent bg-clip-text"
+  className="text-[13px] md:text-[18px] leading-[1.9] max-w-[260px] md:max-w-[620px] text-gray-600 bg-clip-text"
   style={{
     backgroundImage:
       "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.75) 50%, rgba(0,0,0,0.35) 100%)",
@@ -93,7 +93,7 @@ export default function HeroSection() {
       </div>
 
       {/* Marquee */}
-      <div className="absolute bottom-0 left-0 w-full z-20 overflow-hidden">
+      <div className="absolute bottom-2 left-0 w-full z-20 overflow-hidden">
         <div className="py-3 md:py-4 whitespace-nowrap animate-marquee text-white text-[11px] md:text-[13px] tracking-wide">
           EVERY GREAT ACHIEVEMENT STARTS WITH A DREAM AND THE DETERMINATION TO CHASE IT RELENTLESSLY. • I CREATE, INSPIRE, AND EVOLVE THROUGH EVERY CHALLENGE AND EVERY OPPORTUNITY. • EVERY GREAT ACHIEVEMENT STARTS WITH A DREAM AND THE DETERMINATION TO CHASE IT RELENTLESSLY. • I CREATE, INSPIRE, AND EVOLVE THROUGH EVERY CHALLENGE AND EVERY OPPORTUNITY. •
         </div>
